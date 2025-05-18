@@ -1,0 +1,12 @@
+GET http://localhost:5001/
+
+
+####
+
+POST http://localhost:5001/api/auth/login
+
+Content-Type: application/json
+{
+  "email": "khizaruddins@gmail.com",
+  "password": "khizar@123"
+}
