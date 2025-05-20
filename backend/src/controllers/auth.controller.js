@@ -120,4 +120,7 @@ export const logout = async (req, res) => {
   return res.status(200).json({ success: true, message: 'Logout successful' });
 };
 
-export const onboard = async (req, res) => {};
+export const onboard = async (req, res) => {
+  const userId = req.user._id;
+  const { fullName, bio, nativeLanguae, learningLanguage } = req.body;
+};
